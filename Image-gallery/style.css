@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color:aliceblue;
+}
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1{
+    text-align: center;
+    margin: 20px 100px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    /* so to avoid all images in a single row */
+    justify-content: space-between;
+}
+
+.card{
+    width: 32%;
+    /* 32+32+32+2+2(2 is for space between) */
+    /* so to have 3 images in a row */
+    /* wrt container */
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* overflow will set the images to fit in card */
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    /* both are wrt card */
+    filter: grayscale(100%) blur(1px);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+    /* to fit the image completely in card */
+}
+
+.card:hover{
+    /* filter: grayscale(0%); is not here as greyscale is of image and now we are on card*/
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #333);
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+.card:hover img{
+    filter: grayscale(0%) blur(0px);
+}
+
+.card figcaption{
+    position: absolute;
+    /* top:2px;  this will add caption to  top*/ 
+    bottom: 0px;
+    left: 0px;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    /* opacity 0 mean transparenr */
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);
+    transition: 0.3s;
+}
+
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03) rotate(360deg);
+    transition:0.8s;
+}

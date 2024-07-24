@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid prop</title>
+    <style>
+        /* USE INSPECT ELEMENTS TO SEE EFFECT OF PROPERTIES */
+        .container{
+            border: 1px solid red;
+            width: 50vw;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 70px 70px;
+            grid-gap: 3px;
+
+            justify-content:center;
+            /* wrt main axix */
+            align-content: center;
+            /* wrt cross axix */
+            /* used to move content in rest space of container */
+            /* here align content behave like flex-> align-items */
+
+
+            justify-items: center;    
+            align-items: center;
+            /* width became equal to content width */
+            /* in this item will move within the cell */
+
+            /* see by inspect elements */
+
+        }
+
+        .box{
+            border: 1px solid green;
+            background-color: aqua; 
+            /* width: 100px;    */
+        }
+
+        #box4{
+            justify-self: end;
+            /* see by inspect elements */
+            /* wrt main or horizotal axis inside cell */
+        }
+        #box6{
+            align-self: end;
+            /* see by inspect elements */
+            /* wrt cross or vertical axis inside cell */
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">side-bar</div>
+        <div class="box" id="box2">box2</div>
+        <!-- <div class="box" id="box3">box3</div> -->
+        <div class="box" id="box4">footer</div>
+        <!-- <div class="box" id="box5">box5</div> -->
+        <div class="box" id="box6">header</div>
+        <!-- <div class="box" id="box7">box7</div> -->
+        <div class="box" id="box8">content</div>
+        <!-- <div class="box" id="box9">box9</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to CodeHelp</h1>
+    <p><h4>fill the for registration</h4></p>
+    <style>
+        #fieldset{
+            color:blue;
+        }
+    </style>
+    <form  style="width:auto;" action="https://www.thecodehelp.in/course/web-development-bootcamp">
+        <fieldset id="fieldset">
+            <legend style="text-align: center;">fill carefully</legend>
+            
+            <label for="name">Name:</label>       <!--for="id name" because is unique--> <!-- name=" " is used for backend servers-->
+            <input type="text" style="background-color:lightgray;" id="name" name="form-1-name" placeholder="name" required>
+            <br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="form-1-email" placeholder="abc@email" required>
+            <br/>
+            <label for="contact">Contact number:</label>
+            <input type="tel" id="contact" name="form-1-contact" placeholder="phone number">
+            <br/>
+            <label for="gender">Gender</label>
+            <select id="gender" size="0"  >
+                <option value="m">male</option>   <!--value=" " is used to send to backend servers-->
+                <option value="f">female</option>
+                <option value="oth">others</option>
+                <option value="nill" selected>choose</option>
+            </select>
+            <br/>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" id="DOB" name="dob">
+            <br/>
+            
+            <fieldset style="width:0; color:crimson;">
+                <legend>collage year</legend>
+                <div>
+                    <!-- in radio name should be same for one selection -->
+                    <input type="radio" id="1st" name="year" value="1">  <!--value="" is used to send value servers-->
+                    <label for="1st">1st</label>
+                </div>
+                <div>
+                    <input type="radio" id="2nd" name="year" value="2">
+                    <label for="2nd">2nd</label>
+                </div>
+                <div>
+                    <input type="radio" id="3rd" name="year" value="3" checked>
+                    <label for="3rd">3rd</label>
+                </div>
+                <div>
+                    <input type="radio" id="4th" name="year" value="4">
+                    <label for="4th">4th</label>
+                </div>
+            </fieldset>
+            <br/>
+            <label for="msg">enter your message:</label><br/>
+            <textarea placeholder="enter your message here:" id="msg" rows="7" cols="20"></textarea>
+        
+        </fieldset>
+
+        <br/>
+        <input type="submit" id="submit" name="form-1-submir" value="submitt">
+        <button type="button" onclick="alert('hello!')">click me! </button>
+        <input type="reset" id="reset" name="gorm-1-reset" value="reeset">
+    </form>
+    <br/>
+
+    <footer>
+        
+        <table>
+            <tr>
+                <td><a href="https://www.youtube.com/c/LoveBabbar1" target="_blank">
+                    <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+                    width="50"
+                    alt="error"
+                    />
+                </a>
+            </td>
+                <td><a href="https://www.linkedin.com/in/love-babbar-38ab2887/" target="_blank">
+                    <img 
+                    src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                    width="50"
+                    height="40"
+                    alt="error"
+                    />
+                </a>
+            </td>
+                <td><a href="https://discord.com/invite/y2yrEcQv75" target="_blank">
+                    <img 
+                    src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Emblem.png"
+                    width="90"
+                    height="40"
+                    alt="error"
+                    />
+                </a>
+            </td>
+            </tr>
+        </table>
+
+    </footer>
+
+</body>
+</html>

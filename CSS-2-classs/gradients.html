@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradientst</title>
+
+    <style>
+       div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 5px;
+        display: inline-block;
+       }
+
+       .box1{
+        background-image: linear-gradient(blue,green);
+        background-image: linear-gradient(to left,blue,green);
+        background-image: linear-gradient(to top,blue,green);
+        background-image: linear-gradient(to bottom left,blue,green);
+
+        background-image: linear-gradient(to right,rgba(255,0,0,0),rgba(0,255,0,1));
+       }
+
+       .box2{
+        background-image: linear-gradient(to bottom left,blue,green);
+       }
+
+       .box3{
+        background-image: radial-gradient(yellow ,pink);
+       }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

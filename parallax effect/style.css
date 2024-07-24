@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  /*best practice*/
+
+ 
+#wrapper{
+    height: 100vh;
+    /* height is =view port */
+    overflow-x: hidden;
+    /* to terminate the horizontal scroll bar */
+    overflow-y: auto;
+    perspective: 10px; 
+    /* to turn on 3d */
+}
+
+.container{
+    position: relative; 
+    /* as container is immediate parent of both images so to do absolute position in images we need this container as non-statis */
+    display: flex;
+    /* to make adventure in cnter */
+    justify-content: center;
+    align-items: center;
+     height: 100%;
+    transform-style: preserve-3d;
+    /* if not mentioned then 2d effect is there */
+
+    z-index: -1;
+
+}
+
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    /* for overlapping both images */
+    height: 100%;
+    width: 100%;
+    /* 100%=view port */
+    z-index: -1;
+    /* object-fit: cover; */
+    /* object fit will stretch the image in such a way that they will fit properly in container */
+}
+
+h1{
+    position: absolute;
+    top: 5rem;
+    left:50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secheading{
+   font-size: 5rem;
+   padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+ }
+
+ .bg2{
+    background-image: url(sport-2.jpg);
+ }
+
+ .bg3{
+    background-image: url(sport-3.jpg);
+ }
+
+ .bg{
+    position: relative;
+    /* because the heading bikking,surfing etc are overlapping over background images so as bg is immeadiate ancestor of heading so it is positioned as reletive */
+
+    width: 100%;
+    /* equal to view port */
+    background-attachment: fixed;
+    /* then our image got fixed and text mave over it */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+ }  
+
+ .desc{
+    position: absolute;
+    /* for this absolute we have alredy mentioned its immeadiate parnt container i.e bg as relative */
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+ }
+

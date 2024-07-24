@@ -1,0 +1,45 @@
+.blob {
+  width: 144px;
+  height: 144px;
+  display: grid;
+  background: #fff;
+  filter: blur(7.2px) contrast(10);
+  padding: 14.4px;
+  mix-blend-mode: darken;
+}
+
+.blob:before,
+.blob:after {
+  content: "";
+  grid-area: 1/1;
+  width: 57.6px;
+  height: 57.6px;
+  background: #474bff;
+  animation: blob-rhf26m 2s infinite;
+}
+
+.blob:after {
+  animation-delay: -1s;
+}
+
+@keyframes blob-rhf26m {
+  0% {
+     transform: translate(0, 0);
+  }
+
+  25% {
+     transform: translate(100%, 0);
+  }
+
+  50% {
+     transform: translate(100%, 100%);
+  }
+
+  75% {
+     transform: translate(0, 100%);
+  }
+
+  100% {
+     transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,51 @@
+/* class selector */
+.small {
+  font-size: small;
+}
+.large {
+  font-size: larger;
+}
+
+/* element selector */
+p {
+  color: red;
+}
+
+/* id selector */
+/* hexadecimal color */
+#first-button {
+  color: #0000ff;
+}
+
+#para {
+  background-color: rgb(00, 255, 00);
+}
+
+/* pseudo-selector */
+#second-button:hover {
+  /* color:gold */
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  /* float: right;   */
+  color: red;
+  background-color: aqua;
+}
+
+.butt {
+  display: block;
+  width: 20%;
+  padding: 14px 1px;
+  background-color: pink;
+  color: darkviolet;
+}
+.box {
+  width: 50;
+  height: 119px;
+  background: orange;
+  border: 10px solid black;
+  margin: 5%;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+#bg{
+    background: url(images2\feature-section-2BG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg-hover1:hover{
+    /* when we hover over this then a new bg-image is added and it seems that it get fil with color */
+    background-image: url(images2/instant-settlement-bghover.svg);
+}
+
+#bg-hover2:hover{
+    /* when we hover over this then a new bg-image is added and it seems that it get fil with color */
+    background-image: url(images2/upi-autopay-hoverbg.svg);
+}
+
+#bg-hover3:hover{
+    /* when we hover over this then a new bg-image is added and it seems that it get fil with color */
+    background-image: url(images2/magic-checkout-hoverbg.svg);
+}
+
+#bg-hover4:hover{
+    /* when we hover over this then a new bg-image is added and it seems that it get fil with color */
+    background-image: url(images2/payment-button-hoverbg.svg);
+}
+
+#bg-hover5:hover{
+    /* when we hover over this then a new bg-image is added and it seems that it get fil with color */
+    background-image: url(images2/instantsettlement-hoverbg.svg);
+}
+
+#core-featurebg{
+    background-image: url(images2/core-features-sectionBg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* horizontal vertical */
+}
+
+.moveimage{
+    animation:moveImage 19s linear infinite ;
+}
+
+
+
+@keyframes moveImage {
+    0%{
+        top:0; 
+    }
+    100%{
+        top:-100%;
+    }
+}
+
+.CTAsection{
+    background-size: 100% 100%;
+}

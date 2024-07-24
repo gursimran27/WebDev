@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="./styles.css">
+
+     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <h1 class="title">DevDetective</h1>
+
+          <div id="btn-mode">
+            <p id="mode-text">DARK</p>
+            <div class="icon-container">
+              <img src="./assets/images/moon-icon.svg" alt=""id="mode-icon">
+            </div>
+          </div>
+        </header>
+
+        <!-- mian section -->
+        <main>
+          <div id="app">
+            <!-- search bar -->
+            <div class="searchBar-container active">
+              <input
+                type="search"
+                name="user-input"
+                id="input"
+                placeholder="Enter a GitHub username..."
+                required
+              />
+
+              <div class="error">
+                <p id="no-results">no search results</p>
+              </div>
+
+              <button class="btn-search" id="submit">Search</button>
+            </div>
+
+            <!-- profile container -->
+            <div class="profile-container">
+              <div class="profile-content">
+                <div class="profile-header">
+                  <!-- dynamic -->
+                  <img src="#" alt="" id="avatar" />
+  
+                  <div class="profile-info-wrapper">
+                    <div class="profile-name">
+                      <!-- dynamic -->
+                      <h2 id="name"></h2>
+                      <!-- dynamic -->
+                      <a href="#" target="_blank" id="user"></a>
+                    </div>
+  
+                    <!-- dynamic -->
+                    <p id="date"></p>
+                  </div>
+                </div>
+  
+                <!-- dynamic -->
+                <p id="bio"></p>
+  
+                <div class="profile-stats-wrapper">
+                  <div class="proflie-stat">
+                    <p class="stat-title">Repos</p>
+                    <!-- dynamic -->
+                    <p class="stat-value" id="repos"></p>
+                  </div>
+  
+                  <div class="proflie-stat">
+                    <p class="stat-title">Followers</p>
+                    <!-- dynamic -->
+                    <p class="stat-value" id="followers"></p>
+                  </div>
+  
+                  <div class="proflie-stat">
+                    <p class="stat-title">Following</p>
+                    <!-- dynamic -->
+                    <p class="stat-value" id="following"></p>
+                  </div>
+                </div>
+  
+                <div class="profile-bottom-wrapper">
+                  <div class="profile-info">
+                    <div class="botton-icons">
+                      <img src="./assets/images/location-icon.svg" alt="" />
+                    </div>
+                    <!-- dynamic -->
+                    <p id="location"></p>
+                  </div>
+  
+                  <div class="profile-info">
+                    <div class="botton-icons">
+                      <img src="./assets/images/website-icon.svg" alt="" />
+                    </div>
+                    <!-- dynamic -->
+                    <a href="#" id="page"></a>
+                  </div>
+  
+                  <div class="profile-info">
+                    <div class="botton-icons">
+                      <img src="./assets/images/twitter-icon.svg" alt="" />
+                    </div>
+                    <!-- dynamic -->
+                    <a href="#" id="twitter"></a>
+                  </div>
+  
+                  <div class="profile-info">
+                    <div class="botton-icons">
+                      <img src="./assets/images/company-icon.svg" alt="" />
+                    </div>
+                    <!-- dynamic -->
+                    <p id="company"></p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>

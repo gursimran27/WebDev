@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- tr =row     td=coloum -->
+    <style>
+         table,tr,td{/*<!--we can also use id --> */
+            border: 1px solid black;
+            border-collapse: collapse;   
+            /* border collapse is used to remove double border */
+            
+        }
+    </style>
+
+    <h2>table</h2>
+
+    <table id="10">  
+        <caption>caption</caption>
+        <!-- tr*3 -->
+         <tr>
+            <td>month</td>
+            <!-- enter tab -->
+            <td>saving</td>
+         </tr>
+         <tr>
+            <td>jan</td>
+            <td>100</td>
+         </tr>
+         <tr>
+            <td>feb</td>
+            <td>200</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>300</td>
+            </tr>
+         
+
+            <br/>
+            <br/>
+    </table>
+    <!-- tr*3 -->
+
+<!-- /tsable using thead,tbody,tfoot -->
+
+    
+    <table style="background-color: red;">
+    <caption>caption</caption>
+         <thead>
+             <tr >
+                <th>month</th>
+                <!-- enter tab -->
+                <th>saving</td>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                <td style="background-color:blueviolet">jan</td>
+                <td>100</td>
+             </tr>
+             <tr>
+                <td>feb</td>
+                <td>200</td>
+                </tr>
+         </tbody>
+         <tfoot>
+             <tr>
+                 <td>total</td>
+                 <td>300</td>
+             </tr>
+         </tfoot>
+         
+    </table>
+    
+</body>
+</html>

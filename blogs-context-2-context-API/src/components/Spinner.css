@@ -1,0 +1,25 @@
+.custom-loader {
+    width: 100px;
+    height: 24px;
+    display: grid;
+  }
+  .custom-loader:before,
+  .custom-loader:after {
+    content: "";
+    grid-area: 1/1;
+    background:
+      radial-gradient(farthest-side,#766DF4 90%,#0000) left,
+      radial-gradient(farthest-side,#766DF4 90%,#0000) right;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    animation:d4 1s infinite; 
+    transform:translate(var(--d,0)) rotate(0);
+  }
+  .custom-loader:after {
+    --d:38px;
+    animation-delay: .5s;
+  }
+  
+  @keyframes d4 {
+    50%,100% {transform:translate(var(--d,0)) rotate(.5turn)}
+  }

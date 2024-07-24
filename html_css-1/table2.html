@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        table,tr,td,th,caption{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+        }
+    </style>
+    <table>
+        <!-- caption is used to name the table -->
+        <caption>my first table</caption>
+        <tr>
+            <td colspan="2">month</td>
+            <!-- <td>amount</td> -->
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>jan</td>
+            <td rowspan="3">100</td>
+            <td>hdd</td>
+        </tr>
+        <tr>
+            <td>feb</td>
+            <!-- <td>200</td> -->
+            <td>dw2</td>
+        </tr>
+        <tr>
+            <td>march</td>
+            <!-- <td>300</td> -->
+            <td>vf</td>
+        </tr>
+        <tr>
+            <td>june</td>
+            <td>400</td>
+            <td>wfw</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <br><br>
+    <table>
+        <tr>
+            <td >month</td>
+            <td>amount</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>jan</td>
+            <td >100</td>
+            <td>hdd</td>
+        </tr>
+        <tr>
+            <td>feb</td>
+            <td>200</td>
+            <td>dw2</td>
+        </tr>
+        <tr>
+            <td>march</td>
+            <td rowspan="2" colspan="2">300</td>
+            <!-- <td>vf</td> -->
+        </tr>
+        <tr>
+            <td>june</td>
+            <!-- <td>400</td> -->
+            <!-- <td>wfw</td> -->
+        </tr>
+    </table>
+</body>
+</html>

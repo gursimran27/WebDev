@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg/220px-Lc3_2018_%28263682303%29_%28cropped%29.jpeg"
+    />
+
+    <style>
+      aside {
+        box-shadow: 10px 10px 10px 12px rgba(0, 0, 0, 0.618);
+        float: right;
+        width: 40%;
+        height: 150px;
+        border: 2px solid rgb(19, 15, 139);
+        border-style: dotted;
+        /* box-sizing: border-box; */
+        border-radius: 50px;
+        background-color: bisque;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      /* nested selector */
+      aside p {
+        text-shadow: 1px 0.5px 2 #68b910;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: blueviolet;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      aside:hover {
+        background-color: aquamarine;
+        border-radius: 70px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid greenyellow;
+        box-shadow: 3px 3px 9px 5px;
+        color: blueviolet;
+      }
+
+      #i1:hover {
+        color: rgb(225, 9, 24);
+        background-color: rgba(0, 255, 255, 0.49);
+      }
+      #i2:hover {
+        color: rgb(110, 5, 121);
+        background-color: rgba(157, 216, 9, 0.49);
+      }
+
+      figure figcaption {
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body>
+    <header>
+      <h2>Linus Torvalds</h2>
+      <h4>The creator of Linux</h4>
+    </header>
+    <nav style="border: 1px solid green; width: 29%">
+      <ol>
+        <li><a href="#resourse">go to resourses</a></li>
+        <li><a href="#bio">go to biography</a></li>
+        <li><a href="#ach">go to achievement</a></li>
+      </ol>
+    </nav>
+    <br />
+
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg/220px-Lc3_2018_%28263682303%29_%28cropped%29.jpeg"
+        height="320"
+        width="300"
+        class="center"
+      />
+
+      <figcaption>A photograph of Limus Torvalds</figcaption>
+    </figure>
+    <br />
+
+    <!-- <caption>A photograph of Limus Torvalds</caption>  -->
+
+    <section>
+      <h3 id="bio">BIOGRAPHY</h3>
+      <p>
+        Linus Torvalds is a Finnish-American software engineer who is the
+        creator and principal developer of the Linux kernel, which is the kernel
+        for a number of operating systems. He also created the version control
+        system Git. Torvalds was born on December 28, 1969 in Helsinki, Finland.
+        He studied computer science at the University of Helsinki, and he
+        developed the Linux kernel as a student project in 1991. Since then, the
+        Linux kernel has become one of the most widely used kernels in the
+        world, powering everything from smartphones to supercomputers.
+      </p>
+    </section>
+
+    <aside>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        culpa, harum repellat ut aliquam nulla aliquid alias! Libero, quo sequi?
+      </p>
+    </aside>
+    <section>
+      <h3 id="ach">ACHIEVEMENT</h3>
+      <ul type="square">
+        <li>1991-created the linux</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem, ipsum.</li>
+        <li>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id accusamus
+          ex nobis?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.
+        </li>
+      </ul>
+    </section>
+
+    <blockquote>
+      <p>"One of the most influencetial peoplr in the world"</p>
+      <cite>--tribune`</cite>
+    </blockquote>
+
+    <h3 id="resourse">RESOURCES</h3>
+    <p>learn more about linus Torvalds and his work</p>
+    <ul>
+      <li>
+        <a
+          id="i1"
+          href="https://en.wikipedia.org/wiki/Linus_Torvalds"
+          target="_blank"
+          >Wikepedia page</a
+        >
+      </li>
+      <li>
+        <a
+          id="i2"
+          href="https://www.linkedin.com/in/linustorvalds"
+          target="_blank"
+          >linkedin profile</a
+        >
+      </li>
+    </ul>
+
+    <footer>
+      <p>owner info</p>
+      <div>
+        <a href="tel:+919417090896">phone</a>
+      </div>
+      <div>
+        <a href="mailto:singhgursimran165@gmail.com">email</a>
+      </div>
+      <hr />
+      <p style="text-align: center; color: rgb(226, 43, 46)">
+        Copyright © 2023.All Right Reserved
+      </p>
+    </footer>
+  </body>
+</html>

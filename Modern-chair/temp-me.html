@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp-me.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="chair">chair</div>
+            <div class="chair-content">
+              <!-- chair-content is also not position relative -->
+                <div class="cc-top">
+                    <p class="para">Moderen chair</p>
+                    <h2>Telford Launge</h2>
+                    <h4>$254 <span>$530</span></h4>
+                </div>
+                <div class="cc-middle">
+                    <input type="radio" class="desc-btn" id="d1" name="d" checked/>
+                    <label for="d1">Description</label>
+ 
+                    <input type="radio" class="desc-btn" id="d2" name="d"/>
+                    <label for="d2">Details</label>
+                    <div class="desc accer1 para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+                            totam tempora enim officia veritatis hic.
+                    </div>
+                    <div class="desc accer2 para">
+                        <div class="section-inline">
+                        <p><span>80</span>cm<br />Length</p>
+                      </div>
+                      <div class="section-inline">
+                        <p><span>65</span>cm<br />Width</p>
+                      </div>
+                      <div class="section-inline">
+                        <p><span>90</span>cm<br />Height</p>
+                      </div>
+                      <div class="section-inline">
+                        <p><span>17.6</span>lbs<br />Weight</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cc-end">
+                  <!-- cc-end position is not relative -->
+                    <h5><p>Choose Color:</p></h5>
+
+                    <input type="radio"class="color-btn btn-1"  id="c1" name="c" checked />
+                    <label class="c1" for="c1"></label>
+                    <input type="radio"class="color-btn"  id="c2" name="c" />
+                    <label class="c2" for="c2"></label>
+                    <input type="radio"class="color-btn"  id="c3" name="c" />
+                    <label class="c3" for="c3"></label>
+                    <input type="radio"class="color-btn"  id="c4" name="c" />
+                    <label class="c4" for="c4"></label>
+                    <input type="radio"class="color-btn"  id="c5" name="c" />
+                    <label class="c5" for="c5"></label>
+                    <input type="radio"class="color-btn"  id="c6" name="c" />
+                    <label class="c6" for="c6"></label>
+
+                    <div class="info-wrap">
+                      <a href="#" class="btn"
+                        ><i class="uil uil-shopping-cart icon"></i> Add To Cart</a
+                      >
+                    </div>
+
+                    <!-- we need below as in css we have only selectors to access decendants of an element rether than perdecssor elements   i.e ~,+ selectors -->
+
+
+                    <!-- as cc-end,chair-content div's position is not relative so all below are relative to container because we mentioned container as relative i.e relative -->
+                    <div class="img-wrap chair-1"></div>
+                    <div class="img-wrap chair-2"></div>
+                    <div class="img-wrap chair-3"></div>
+                    <div class="img-wrap chair-4"></div>
+                    <div class="img-wrap chair-5"></div>
+                    <div class="img-wrap chair-6"></div>
+
+
+                     <!-- background color -->
+                    <div class="back-color back-1"></div>
+                    <div class="back-color back-2"></div>
+                    <div class="back-color back-3"></div>
+                    <div class="back-color back-4"></div>
+                    <div class="back-color back-5"></div>
+                    <div class="back-color back-6"></div>
+              </div>
+
+            </div>
+
+            
+            
+            
+
+
+           
+         </div>
+    </div>
+</body>
+</html>

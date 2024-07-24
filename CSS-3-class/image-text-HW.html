@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .wrapper{
+      display: flex;
+      justify-content: center;
+      padding-top: 10%;
+    }
+
+    .container{
+      position: relative;
+      text-align: center;
+      height: 400px;
+      width: 500px;
+      color: white;
+      font-size: larger;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      /* so image will fully cover the container */
+      overflow-x: hidden;
+      overflow-y: auto;
+      object-fit: cover;
+    }
+
+    .bottom-left{
+      position: absolute;
+      bottom: 0px;
+      left:5px;
+    }
+
+    .top-left{
+      position: absolute;
+      top:0px;
+      left:5px
+    }
+
+    .top-right{
+      position: absolute;
+      top:0px;
+      right:5px;
+    }
+
+    .bottom-right{
+      position: absolute;
+      bottom: 0px;
+      right: 5px;
+    }
+
+    .centered{
+      position: absolute;
+      bottom: 44%;
+      left: 44%;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <img src="\Image-gallery\image2.jpeg" alt="error">
+  
+      <div class="bottom-left">Bottom Left</div>
+      <div class="top-left">Top Left</div>
+      <div class="top-right">Top Right</div>
+      <div class="bottom-right">Bottom Right</div>
+      <div class="centered">Centered</div>
+    </div>
+  </div>
+</body>
+</html>

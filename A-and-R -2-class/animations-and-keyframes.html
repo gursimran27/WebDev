@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation and keyframes</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 30vh;
+        border: 1px solid black;
+        background-color: red;
+        margin: 20px;
+      }
+
+      .box {
+        width: 140px;
+        height: 70%;
+        border: 1px solid black;
+        background-color: aqua;
+        text-align: center;
+        margin: 20px;
+        position: relative;
+
+        animation-name: babbar;
+        animation-duration: 6s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 3;
+        /* can be infinite */
+        animation-delay: 1s;
+        /* animation-direction: reverse; */
+        /* it reverses the animation direction */
+
+        animation-fill-mode: forwards;
+        /* it means after all transition it will stick to its ending state and for backward it will stick to starting state */
+      }
+
+      /* @keyframes babbar{
+            from{
+                width: 140px;
+            }
+            to{
+                width: 90%;
+                background-color: violet;
+            }
+        } */
+
+                                               /* or */
+
+      /* 
+          @keyframes babbar {
+            0%{
+                transform: translate(0vw);
+            }
+
+            50%{
+                transform: translate(50vw,50vh) rotate(360deg);
+            }
+            100%{
+                transform: translate(1000px);
+            }
+         } */
+
+                                             /* or */
+
+                                             
+      @keyframes babbar {
+        0% {
+          background-color: rgb(0, 225, 255);
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 600px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 600px;
+          top: 400px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 400px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+    </div>
+  </body>
+</html>
